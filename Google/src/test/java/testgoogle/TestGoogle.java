@@ -1,4 +1,4 @@
-package testamazon;
+package testgoogle;
 
 import Base.CommonAPI;
 import org.openqa.selenium.By;
@@ -6,12 +6,13 @@ import org.openqa.selenium.Keys;
 import org.testng.annotations.Test;
 
 
-public class TestAmazonHome extends CommonAPI {
-
+public class TestGoogle extends CommonAPI {
     @Test
     public void testSearchBar(){
-        driver.findElement(By.id("twotabsearchtextbox")).sendKeys("alcohol wipes", Keys.ENTER);
+        driver.findElement(By.name("q")).sendKeys("weather");
+        driver.findElement(By.name("btnK")).sendKeys(Keys.RETURN);
     }
+
 
     @Test
     public void testHomePageTitle(){

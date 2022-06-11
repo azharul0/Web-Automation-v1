@@ -4,9 +4,9 @@
 <suite name="Unit Test Automation Script" parallel="false">
     <test name="Amazon Home">
         <parameter name="useCloudEnv" value="false"></parameter>
-        <parameter name="url" value="https://www.amazon.com/"></parameter>
+        <parameter name="url" value="https://www.google.com/"></parameter>
         <classes>
-            <class name="testamazon.TestAmazonHome"></class>
+            <class name="testgoogle.TestGoogle"></class>
         </classes>
     </test>
 </suite>
